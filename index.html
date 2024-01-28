@@ -1,57 +1,136 @@
-
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>x_x</title>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>x_x</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="x_x">
+    <meta property="og:description" content="Private Biolink Hosting Service.">
+    <meta property="og:image" content="https://cdn.discordapp.com/emojis/921533453487456306.webp?size=96&quality=lossless">
+    <meta property="og:url" content="https://misery.lol/">
+    <meta property="theme-color" content="#5765f2">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/emojis/1030946674081796218.webp?size=96&quality=lossless">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/8d2a52b7b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="black-screen"></div>
+  <button id="hide-black-screen">click to enter... </button>
+    <div class="top-links">
         
-        <meta property="og:title" content="☆" /> 
-        <meta property="og:type" content="x" />
-        <meta property="og:url" content="https://misery.lol" />
-        <meta property="og:image" content="https://cdn.discordapp.com/attachments/1176788469889114182/1178967524440801320/IMG_3188.jpg?ex=65781211&is=65659d11&hm=e2e423d73dd0a234e6732de6ca7b8da3714b966da7d8acfc164a939237ac28e6&" />
-        <meta property="og:description" content="حتى الأشباح ليست فارغة" />
-        <meta name="theme-color" content="#23272A">
-        <meta name="twitter:card" content="summary_large_image">
+        <a href="https://discordapp.com/users/1169814191738196012" class="link-wiki">biolink request.</a>
+        
+      </div>
+  <div class="container">
+        <div class="bio-container">
+            <div class="bio-container">
+                <p id="bio"></p>
+              </div>
+          </div>
+    <div class="icons">
+      <a href="" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/axst/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@kbkb" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="discord">
+      <iframe height="250px" width="410px" scrolling="no" src="" frameborder="0"></iframe>
+    </div>
+  </div>
+    <script>
+      function fetchAndDisplayIP() {
+        const iframe = document.querySelector(".discord iframe");
 
-
-        <link href="assets/js/css/hover-min.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/style.css"> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
-    </head>
-    <body>
-        <div class="background">
-            <img src="assets/background.gif" alt="background image"/> 
+        fetch("https://api.ipify.org?format=json")
+          .then((response) => response.json())
+          .then((data) => {
+            const userIP = data.ip;
+            const lanyardURL = `https://lanyard.cnrad.dev/api/1169814191738196012?borderRadius=5px&idleMessage=gothboiclique&bg=a&animated=true;`;
+            iframe.src = lanyardURL;
+          })
+          .catch((error) => {
+            console.error("Error fetching IP:", error);
+          });
+      }
+      fetchAndDisplayIP();
+    </script>
+    <div class="snowflakes">
+        <div class="snowflake">
+       <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
         </div>
-        <div class="wrapper">
-            <div class="inner">
-                <h1>gbc</h1>
-                <h2>the root of all evil</h2>
-                <div class="row">
-                    <div class="column">
-                        <a class="hvr-grow" href="https://discordapp.com/users/1169814191738196012" target="_blank"><img src="assets/discord-512.webp" width="50" height="50"></a>
-                        </div>
-                    <div class="column">
-                        <a class="hvr-grow" href="https://www.tiktok.com/@kbkb" target="_blank"><img src="assets/550df541f6e00bef27e4e890ab5349d5.png" width="50" height="50"></a>
-                    </div>
-                    <div class="column">
-                        <a class="hvr-grow" href="https://instagram.com/axst" target="_blank"><img src="assets/1024px-Instagram_icon.png" width="50" height="50"></a>
-                    </div>
-                </div>
-                
-            </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
         </div>
-        <span class="audio" onclick="playAudio()">(Click for audio)</span> 
-        <audio controls autoplay>
-            <source src="assets/soundtrack.mp3" type="audio/mpeg"> 
-        </audio>
-        <script>
-            function playAudio() { 
-                document.querySelector('audio').play()
-            }
-        </script>
-    </body>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1183917692202258462.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1183917692202258462.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+     <img src="https://cdn.discordapp.com/emojis/1183917692202258462.webp?size=96&quality=lossless" />   </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1183917692202258462.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+</body>
 </html>
+
+<script>
+    const bios = ["@g.bc", "triple k on my wrist", "real recognize real", "can't trust cause they all creep", "don't expect to get what you give" ];
+    const bioContainer = document.querySelector('.bio-container');
+    let currentBioIndex = 0;
+
+    function typeBio(bio) {
+      let i = 0;
+      const intervalId = setInterval(() => {
+        bioContainer.innerHTML = bio.substring(0, i) + '|';
+        i++;
+        if (i > bio.length) {
+          clearInterval(intervalId);
+          setTimeout(() => {
+            deleteBio(bio);
+          }, 1000);
+        }
+      }, 100);
+    }
+
+    function deleteBio(bio) {
+      let i = bio.length;
+      const intervalId = setInterval(() => {
+        bioContainer.innerHTML = bio.substring(0, i) + '|';
+        i--;
+        if (i < 0) {
+          clearInterval(intervalId);
+          currentBioIndex++;
+          if (currentBioIndex >= bios.length) {
+            currentBioIndex = 0;
+          }
+          setTimeout(() => {
+            typeBio(bios[currentBioIndex]);
+          }, 1000);
+        }
+      }, 100);
+    }
+
+    typeBio(bios[currentBioIndex]);
+    </script>
+<script>
+const hideBlackScreenButton = document.querySelector('#hide-black-screen');
+const audio = new Audio('https://cdn.discordapp.com/attachments/1174937323885047910/1187915290479165492/misery.mp4?ex=65989f53&is=65862a53&hm=e01febb984e1404fdb76f120&');
+
+hideBlackScreenButton.addEventListener('click', () => {
+  hideBlackScreenButton.style.display = 'none';
+  document.querySelector('#black-screen').style.display = 'none';
+  audio.play();
+});
+</script>
