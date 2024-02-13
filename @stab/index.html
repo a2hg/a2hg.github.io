@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>x_x</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="x_x">
+    <meta property="og:description" content="#exile.">
+    <meta property="og:image" content="https://media.discordapp.net/attachments/1202102026381566054/1207108288613847140/artworks-qEzRAEiahW6GtGYq-jz048A-t240x240.jpg?ex=65de7232&is=65cbfd32&hm=c51ddf99f13a72d8e80043e2b33fd8e2996a9d151401495929b8a40bbea81024&=&format=webp">
+    <meta property="og:url" content="https://misery.lol/">
+    <meta property="theme-color" content="#5765f2">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/emojis/1030946674081796218.webp?size=96&quality=lossless">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/8d2a52b7b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="black-screen"></div>
+  <button id="hide-black-screen">click to enter... </button>
+    <div class="top-links">
+        
+        <a href="https://discord.gg/kms" class="link-wiki">biolink request.</a>
+        
+      </div>
+  <div class="container">
+        <div class="bio-container">
+            <div class="bio-container">
+                <p id="bio"></p>
+              </div>
+          </div>
+    <div class="icons">
+      <a href="" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/2facd/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@disserving" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="discord">
+      <iframe height="250px" width="410px" scrolling="no" src="" frameborder="0"></iframe>
+    </div>
+  </div>
+    <script>
+      function fetchAndDisplayIP() {
+        const iframe = document.querySelector(".discord iframe");
+
+        fetch("https://api.ipify.org?format=json")
+          .then((response) => response.json())
+          .then((data) => {
+            const userIP = data.ip;
+            const lanyardURL = `https://lanyard.cnrad.dev/api/582032632234115073?borderRadius=5px&idleMessage=soul cry&bg=a&animated=true;`;
+            iframe.src = lanyardURL;
+          })
+          .catch((error) => {
+            console.error("Error fetching IP:", error);
+          });
+      }
+      fetchAndDisplayIP();
+    </script>
+    <div class="snowflakes">
+        <div class="snowflake">
+       <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1183917692202258462.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1183917692202258462.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+     <img src="https://cdn.discordapp.com/emojis/1183917692202258462.webp?size=96&quality=lossless" />   </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1183917692202258462.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+        <div class="snowflake">
+      <img src="https://cdn.discordapp.com/emojis/1168647607472631879.webp?size=96&quality=lossless" /> 
+        </div>
+</body>
+</html>
+
+<script>
+    const bios = ["@hahahahhahahahha", "#exile", "on", "top." ];
+    const bioContainer = document.querySelector('.bio-container');
+    let currentBioIndex = 0;
+
+    function typeBio(bio) {
+      let i = 0;
+      const intervalId = setInterval(() => {
+        bioContainer.innerHTML = bio.substring(0, i) + '|';
+        i++;
+        if (i > bio.length) {
+          clearInterval(intervalId);
+          setTimeout(() => {
+            deleteBio(bio);
+          }, 1000);
+        }
+      }, 100);
+    }
+
+    function deleteBio(bio) {
+      let i = bio.length;
+      const intervalId = setInterval(() => {
+        bioContainer.innerHTML = bio.substring(0, i) + '|';
+        i--;
+        if (i < 0) {
+          clearInterval(intervalId);
+          currentBioIndex++;
+          if (currentBioIndex >= bios.length) {
+            currentBioIndex = 0;
+          }
+          setTimeout(() => {
+            typeBio(bios[currentBioIndex]);
+          }, 1000);
+        }
+      }, 100);
+    }
+
+    typeBio(bios[currentBioIndex]);
+    </script>
+<script>
+const hideBlackScreenButton = document.querySelector('#hide-black-screen');
+const audio = new Audio('https://cdn.discordapp.com/attachments/1174937323885047910/1187915290479165492/misery.mp4?ex=65989f53&is=65862a53&hm=e01febb984e1404fdb76f120&');
+
+hideBlackScreenButton.addEventListener('click', () => {
+  hideBlackScreenButton.style.display = 'none';
+  document.querySelector('#black-screen').style.display = 'none';
+  audio.play();
+});
+</script>
